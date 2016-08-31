@@ -1,0 +1,20 @@
+" Plugins
+
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'switch_headers.vim'
+Plugin 'tpope/vim-speeddating'
+Plugin 'wincent/command-t'
+Plugin 'joonty/vdebug'
+Plugin 'shougo/vimshell.vim'
+Plugin 'sirver/ultisnips'
+Plugin 'stanangeloff/php.vim'
+Plugin 'kris2k/vim-pathogen'
+Plugin 'shawncplus/phpcomplete.vim'
+Plugin 'mattn/calendar-vim'
+Plugin 'chrisbra/nrrwrgn'
+Plugin 'utl.vim'
+Plugin 'jceb/vim-orgmode'
+Plugin 'SQLComplete.vim'
+Plugin 'rhysd/vim-clang-format'
+Plugin 'bbchung/clighter'
+
