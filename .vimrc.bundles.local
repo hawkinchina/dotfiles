@@ -1,7 +1,6 @@
 " Plugins
 
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'switch_headers.vim'
 Plugin 'tpope/vim-speeddating'
 Plugin 'joonty/vdebug'
 Plugin 'shougo/vimshell.vim'
@@ -17,7 +16,6 @@ Plugin 'jceb/vim-orgmode'
 Plugin 'SQLComplete.vim'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'bbchung/clighter8'
-Plugin 'msanders/cocoa.vim'
 Plugin 'keith/swift.vim'
 Plugin 'wakatime/vim-wakatime'
 Plugin 'metakirby5/codi.vim'

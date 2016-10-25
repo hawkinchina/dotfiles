@@ -12,6 +12,8 @@ if (&t_Co == 256 || has('gui_running'))
   endif
 endif
 
+colorscheme koehler
+
 " Disambiguate ,a & ,t from the Align plugin, making them fast again.
 "
 " This section is here to prevent AlignMaps from adding a bunch of mappings
@@ -41,16 +43,27 @@ function! NumberToggle()
 endfunc
 nnoremap <C-n> :call NumberToggle()<cr>
 
+" Toggle Log
+function! ToggleVerbose()
+    if !&verbose
+        set verbosefile=~/.log/vim/verbose.log
+        set verbose=15
+    else
+        set verbose=0
+        set verbosefile=
+    endif
+endfunction
+
 set ts=4
 set sw=4
 set st=4
 set et
-set guifont=Monaco:h12
+set guifont=Menlo:h13
 set background=dark
 
 " Config for CLighter
-let g:clighter8_autostart = 1
-let g:clighter8_libclang_path = '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libclang.dylib'
+" let g:clighter8_autostart = 1
+" let g:clighter8_libclang_path = '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libclang.dylib'
 
 " Config for auto save
 " let g:auto_save = 1  " enable AutoSave on Vim startup
@@ -60,6 +73,9 @@ let g:clighter8_libclang_path = '/Applications/Xcode.app/Contents/Developer/Tool
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_key_list_select_completion   = ['<C-j>', '<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-k>', '<C-p>', '<Up>']
+let g:ycm_python_binary_path = 'python3'
+" let g:ycm_server_use_vim_stdout = 1
+" let g:ycm_server_log_level = 'debug'
 
 " UltiSnips config
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe
@@ -74,4 +90,21 @@ let g:UltiSnipsEditSplit="vertical"
 
 " Unite outline
 nnoremap <leader>o :Unite outline<cr>
+
+" Clang Format
+let g:clang_format#style_options = {
+            \ "AccessModifierOffset" : -4,
+            \ "AllowShortIfStatementsOnASingleLine" : "true",
+            \ "AlwaysBreakTemplateDeclarations" : "true",
+            \ "Standard" : "C++11"}
+
+" map to <Leader>cf in C++ code
+autocmd FileType c,cpp,objc nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
+autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
+
+" if you install vim-operator-user
+autocmd FileType c,cpp,objc map <buffer><Leader>x <Plug>(operator-clang-format)
+
+" Toggle auto formatting:
+nmap <Leader>C :ClangFormatAutoToggle<CR>
 
