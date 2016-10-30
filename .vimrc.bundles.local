@@ -1,6 +1,7 @@
 " Plugins
 
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'bbchung/clighter8'
 Plugin 'tpope/vim-speeddating'
 Plugin 'joonty/vdebug'
 Plugin 'shougo/vimshell.vim'
@@ -15,7 +16,6 @@ Plugin 'utl.vim'
 Plugin 'jceb/vim-orgmode'
 Plugin 'SQLComplete.vim'
 Plugin 'rhysd/vim-clang-format'
-Plugin 'bbchung/clighter8'
 Plugin 'keith/swift.vim'
 Plugin 'wakatime/vim-wakatime'
 Plugin 'metakirby5/codi.vim'
@@ -23,4 +23,7 @@ Plugin 'mtth/scratch.vim'
 Plugin 'shougo/unite.vim'
 Plugin 'shougo/unite-outline'
 Plugin 'ryotakato/unite-outline-objc'
+
+" Neovim plugins
+Plugin 'bbchung/clamp'
 

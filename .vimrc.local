@@ -56,14 +56,19 @@ endfunction
 
 set ts=4
 set sw=4
-set st=4
+set sts=4
 set et
 set guifont=Menlo:h13
 set background=dark
 
 " Config for CLighter
-" let g:clighter8_autostart = 1
-" let g:clighter8_libclang_path = '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libclang.dylib'
+if has('nvim')
+    let g:clamp_autostart = 1
+    let g:clamp_libclang_file = '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libclang.dylib'
+else
+    let g:clighter8_autostart = 1
+    let g:clighter8_libclang_file = '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libclang.dylib'
+endif
 
 " Config for auto save
 " let g:auto_save = 1  " enable AutoSave on Vim startup
@@ -86,7 +91,9 @@ let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
-" set regexpengine=1
+" solve leg on relative line number
+set regexpengine=1
+
 
 " Unite outline
 nnoremap <leader>o :Unite outline<cr>
