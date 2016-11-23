@@ -23,6 +23,7 @@ Plugin 'mtth/scratch.vim'
 Plugin 'shougo/unite.vim'
 Plugin 'shougo/unite-outline'
 Plugin 'ryotakato/unite-outline-objc'
+Plugin 'chemzqm/wxapp.vim'
 
 " Neovim plugins
 Plugin 'bbchung/clamp'
