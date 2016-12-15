@@ -1,30 +1,58 @@
-" Plugins
 
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'bbchung/clighter8'
+" Plugins
 Plugin 'tpope/vim-speeddating'
 Plugin 'joonty/vdebug'
 Plugin 'shougo/vimshell.vim'
-Plugin 'sirver/ultisnips'
-Plugin 'honza/vim-snippets'
-Plugin 'stanangeloff/php.vim'
 Plugin 'kris2k/vim-pathogen'
-Plugin 'shawncplus/phpcomplete.vim'
 Plugin 'mattn/calendar-vim'
 Plugin 'chrisbra/nrrwrgn'
 Plugin 'utl.vim'
-Plugin 'jceb/vim-orgmode'
-Plugin 'SQLComplete.vim'
-Plugin 'rhysd/vim-clang-format'
-Plugin 'keith/swift.vim'
 Plugin 'wakatime/vim-wakatime'
 Plugin 'metakirby5/codi.vim'
 Plugin 'mtth/scratch.vim'
+Bundle 'Shougo/vimproc'
+Plugin 'jiangmiao/auto-pairs'
+
+" language support
+Plugin 'jceb/vim-orgmode'
+Plugin 'bbchung/clighter8'
+Plugin 'stanangeloff/php.vim'
+
+" outline
 Plugin 'shougo/unite.vim'
 Plugin 'shougo/unite-outline'
 Plugin 'ryotakato/unite-outline-objc'
+
+" wechat
 Plugin 'chemzqm/wxapp.vim'
 
-" Neovim plugins
+" Complete
+Plugin 'honza/vim-snippets'
+Plugin 'sirver/ultisnips'
+Plugin 'rhysd/vim-clang-format'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'SQLComplete.vim'
+" Plugin 'shougo/neocomplete.vim'
+Plugin 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+
+" php
+" Plugin 'shawncplus/phpcomplete.vim'
+" Plugin '2072/php-indenting-for-vim'
+Plugin 'm2mdas/phpcomplete-extended'
+Plugin 'captbaritone/better-indent-support-for-php-with-html'
+
+" html
+Plugin 'docunext/closetag.vim'
+Plugin 'mattn/emmet-vim'
+
+" swift
+Plugin 'mitsuse/autocomplete-swift'
+Plugin 'keith/swift.vim'
+Plugin 'landaire/deoplete-swift'
+
+" C, C++, Objc
 Plugin 'bbchung/clamp'
+
+" git tool
+Plugin 'mhinz/vim-signify'
 
