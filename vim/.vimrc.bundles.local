@@ -12,10 +12,10 @@ Plugin 'metakirby5/codi.vim'
 Plugin 'mtth/scratch.vim'
 Bundle 'Shougo/vimproc'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'mhinz/vim-startify'
 
 " language support
 Plugin 'jceb/vim-orgmode'
-Plugin 'bbchung/clighter8'
 Plugin 'stanangeloff/php.vim'
 
 " outline
@@ -37,6 +37,7 @@ Plugin 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 " php
 " Plugin 'shawncplus/phpcomplete.vim'
+" php-indenting-for-vim fucked php file with html
 " Plugin '2072/php-indenting-for-vim'
 Plugin 'm2mdas/phpcomplete-extended'
 Plugin 'captbaritone/better-indent-support-for-php-with-html'
@@ -45,18 +46,24 @@ Plugin 'captbaritone/better-indent-support-for-php-with-html'
 Plugin 'docunext/closetag.vim'
 Plugin 'mattn/emmet-vim'
 
+" javascript
+Plugin 'marijnh/tern_for_vim'
+
 " swift
 Plugin 'mitsuse/autocomplete-swift'
 Plugin 'keith/swift.vim'
 Plugin 'landaire/deoplete-swift'
 
 " C, C++, Objc
-Plugin 'bbchung/clamp'
 
 " git tool
 Plugin 'mhinz/vim-signify'
 
 " airline
-" Plugin 'vim-airline/vim-airline'
-" Plugin 'vim-airline/vim-airline-themes'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
+" color & theme
+Plugin 'dracula/vim'
+Bundle 'ryanoasis/vim-devicons'
 
