@@ -1,7 +1,7 @@
 
 " Plugins
 Plugin 'tpope/vim-speeddating'
-Plugin 'joonty/vdebug'
+" Plugin 'joonty/vdebug'
 Plugin 'shougo/vimshell.vim'
 Plugin 'kris2k/vim-pathogen'
 Plugin 'mattn/calendar-vim'
@@ -13,6 +13,7 @@ Plugin 'mtth/scratch.vim'
 Bundle 'Shougo/vimproc'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'mhinz/vim-startify'
+Plugin 'miyakogi/conoline.vim'
 
 " language support
 Plugin 'jceb/vim-orgmode'
@@ -49,21 +50,38 @@ Plugin 'mattn/emmet-vim'
 " javascript
 Plugin 'marijnh/tern_for_vim'
 
+" vue
+Plugin 'posva/vim-vue'
+
 " swift
 Plugin 'mitsuse/autocomplete-swift'
 Plugin 'keith/swift.vim'
 Plugin 'landaire/deoplete-swift'
 
 " C, C++, Objc
+Plugin 'arakashic/chromatica.nvim'
+
+" Python
+Plugin 'hynek/vim-python-pep8-indent'
 
 " git tool
 Plugin 'mhinz/vim-signify'
 
-" airline
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+
+" go
+Plugin 'fatih/vim-go'
+
+" status bar
+" Plugin 'vim-airline/vim-airline'
+" Plugin 'vim-airline/vim-airline-themes'
+Plugin 'itchyny/lightline.vim'
 
 " color & theme
 Plugin 'dracula/vim'
 Bundle 'ryanoasis/vim-devicons'
+
+" easymotion
+Plugin 'easymotion/vim-easymotion'
+Plugin 'haya14busa/vim-easyoperator-phrase'
+Plugin 'haya14busa/vim-easyoperator-line'
 

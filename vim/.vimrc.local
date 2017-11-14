@@ -62,6 +62,7 @@ set background=dark
 
 " python path
 let g:python_host_prog='python3'
+let g:python3_host_prog='python3'
 
 " Config for auto save
 " let g:auto_save = 1  " enable AutoSave on Vim startup
@@ -80,8 +81,8 @@ nmap <Leader>D :YcmCompleter GoTo
 " UltiSnips config
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe
 let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
+let g:UltiSnipsJumpForwardTrigger="<C-b>"
+let g:UltiSnipsJumpBackwardTrigger="<C-z>"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
@@ -144,9 +145,37 @@ let g:deoplete#sources#swift#daemon_autostart = 1
 " airline
 let g:airline_powerline_fonts = 1
 
-" quick save key
+" Chromatica for clang syntax highlight
+let g:chromatica#libclang_path='/Applications/Xcode.app/Contents/Frameworks/libclang.dylib'
+let g:chromatica#enable_at_startup=0
+
+" spell check
+set spell spelllang=en_us,cjk
+set nospell
+
+" my quick keys
 nmap <Leader>ss :wa<CR>
 nmap <Leader>qq :q<CR>
 nmap <Leader>qqq :qa<CR>
+nmap <Leader>bd :bd<CR>
 nmap <Leader>nh :noh<CR>
+
+" Python
+" using vim-python-pep8-indent
+let g:pymode_intend=0
+" let g:syntastic_python_checkers = ['pylint']
+
+" go
+let g:syntastic_go_checkers = ['golint']
+
+" performance
+set lazyredraw
+
+let g:intent_guides_start_level=2
+
+" conoline
+let g:conoline_auto_enable=1
+
+" wechat mini program using wepy
+au BufRead,BufNewFile *.wpy setlocal filetype=vue.html.javascript.css
 
